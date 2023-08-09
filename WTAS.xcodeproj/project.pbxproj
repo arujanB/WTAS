@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84B4E5032A82530800FF0E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5022A82530800FF0E72 /* AppDelegate.swift */; };
+		84B4E5052A82530800FF0E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5042A82530800FF0E72 /* SceneDelegate.swift */; };
+		84B4E5072A82530800FF0E72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5062A82530800FF0E72 /* ViewController.swift */; };
+		84B4E50D2A82530800FF0E72 /* WTAS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E50B2A82530800FF0E72 /* WTAS.xcdatamodeld */; };
+		84B4E50F2A82530B00FF0E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B4E50E2A82530B00FF0E72 /* Assets.xcassets */; };
+		84B4E5122A82530B00FF0E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B4E5102A82530B00FF0E72 /* LaunchScreen.storyboard */; };
+		B6BE55BCFBD8D505A96725AF /* Pods_WTAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832676FAC4F292CFDF80B3BC /* Pods_WTAS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		196120C137159E8C45DF51D9 /* Pods-WTAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTAS.release.xcconfig"; path = "Target Support Files/Pods-WTAS/Pods-WTAS.release.xcconfig"; sourceTree = "<group>"; };
+		832676FAC4F292CFDF80B3BC /* Pods_WTAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B4E4FF2A82530800FF0E72 /* WTAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B4E5022A82530800FF0E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84B4E5042A82530800FF0E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84B4E5062A82530800FF0E72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84B4E50C2A82530800FF0E72 /* WTAS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WTAS.xcdatamodel; sourceTree = "<group>"; };
+		84B4E50E2A82530B00FF0E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B4E5112A82530B00FF0E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84B4E5132A82530B00FF0E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB55E5198D1E8D7AFDEA338 /* Pods-WTAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTAS.debug.xcconfig"; path = "Target Support Files/Pods-WTAS/Pods-WTAS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B4E4FC2A82530800FF0E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BE55BCFBD8D505A96725AF /* Pods_WTAS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84B4E4F62A82530800FF0E72 = {
+			isa = PBXGroup;
+			children = (
+				84B4E5012A82530800FF0E72 /* WTAS */,
+				84B4E5002A82530800FF0E72 /* Products */,
+				B6A70B19A991CC814CBDC9AC /* Pods */,
+				98707BB6CCC264D971DBF35C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84B4E5002A82530800FF0E72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B4E4FF2A82530800FF0E72 /* WTAS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B4E5012A82530800FF0E72 /* WTAS */ = {
+			isa = PBXGroup;
+			children = (
+				84B4E5022A82530800FF0E72 /* AppDelegate.swift */,
+				84B4E5042A82530800FF0E72 /* SceneDelegate.swift */,
+				84B4E5062A82530800FF0E72 /* ViewController.swift */,
+				84B4E50E2A82530B00FF0E72 /* Assets.xcassets */,
+				84B4E5102A82530B00FF0E72 /* LaunchScreen.storyboard */,
+				84B4E5132A82530B00FF0E72 /* Info.plist */,
+				84B4E50B2A82530800FF0E72 /* WTAS.xcdatamodeld */,
+			);
+			path = WTAS;
+			sourceTree = "<group>";
+		};
+		98707BB6CCC264D971DBF35C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832676FAC4F292CFDF80B3BC /* Pods_WTAS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6A70B19A991CC814CBDC9AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DB55E5198D1E8D7AFDEA338 /* Pods-WTAS.debug.xcconfig */,
+				196120C137159E8C45DF51D9 /* Pods-WTAS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B4E4FE2A82530800FF0E72 /* WTAS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B4E5162A82530B00FF0E72 /* Build configuration list for PBXNativeTarget "WTAS" */;
+			buildPhases = (
+				FF9AE1FDC3E535080A742899 /* [CP] Check Pods Manifest.lock */,
+				84B4E4FB2A82530800FF0E72 /* Sources */,
+				84B4E4FC2A82530800FF0E72 /* Frameworks */,
+				84B4E4FD2A82530800FF0E72 /* Resources */,
+				E88F53F31D6BA7F1AD3BBF81 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTAS;
+			productName = WTAS;
+			productReference = 84B4E4FF2A82530800FF0E72 /* WTAS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B4E4F72A82530800FF0E72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					84B4E4FE2A82530800FF0E72 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 84B4E4FA2A82530800FF0E72 /* Build configuration list for PBXProject "WTAS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B4E4F62A82530800FF0E72;
+			productRefGroup = 84B4E5002A82530800FF0E72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B4E4FE2A82530800FF0E72 /* WTAS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B4E4FD2A82530800FF0E72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4E5122A82530B00FF0E72 /* LaunchScreen.storyboard in Resources */,
+				84B4E50F2A82530B00FF0E72 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E88F53F31D6BA7F1AD3BBF81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTAS/Pods-WTAS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTAS/Pods-WTAS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WTAS/Pods-WTAS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF9AE1FDC3E535080A742899 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTAS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B4E4FB2A82530800FF0E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4E50D2A82530800FF0E72 /* WTAS.xcdatamodeld in Sources */,
+				84B4E5072A82530800FF0E72 /* ViewController.swift in Sources */,
+				84B4E5032A82530800FF0E72 /* AppDelegate.swift in Sources */,
+				84B4E5052A82530800FF0E72 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84B4E5102A82530B00FF0E72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B4E5112A82530B00FF0E72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B4E5142A82530B00FF0E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84B4E5152A82530B00FF0E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B4E5172A82530B00FF0E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB55E5198D1E8D7AFDEA338 /* Pods-WTAS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3N8NDWZJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WTAS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sdu.edu.arujan.kz.WTAS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B4E5182A82530B00FF0E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196120C137159E8C45DF51D9 /* Pods-WTAS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3N8NDWZJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WTAS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sdu.edu.arujan.kz.WTAS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B4E4FA2A82530800FF0E72 /* Build configuration list for PBXProject "WTAS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B4E5142A82530B00FF0E72 /* Debug */,
+				84B4E5152A82530B00FF0E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B4E5162A82530B00FF0E72 /* Build configuration list for PBXNativeTarget "WTAS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B4E5172A82530B00FF0E72 /* Debug */,
+				84B4E5182A82530B00FF0E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84B4E50B2A82530800FF0E72 /* WTAS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84B4E50C2A82530800FF0E72 /* WTAS.xcdatamodel */,
+			);
+			currentVersion = 84B4E50C2A82530800FF0E72 /* WTAS.xcdatamodel */;
+			path = WTAS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84B4E4F72A82530800FF0E72 /* Project object */;
+}
