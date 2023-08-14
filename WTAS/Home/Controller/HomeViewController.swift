@@ -63,10 +63,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemPink
-        
         let backgroundImage = UIImageView(image: UIImage(named: "home"))
         backgroundImage.contentMode = .scaleAspectFill
+        
+        //to remove the back icon on the left side of the screen
+//        navigationItem.setHidesBackButton(false, animated: false)
         
         view.addSubview(backgroundImage)
         backgroundImage.snp.makeConstraints { make in
@@ -79,6 +80,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        //SPACE between tableView
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
     }
 
@@ -161,7 +163,7 @@ extension HomeViewController {
     
     func setUpConstraints(){
         stackView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(-30)
             make.leading.equalToSuperview().offset(25)
             make.trailing.equalToSuperview().inset(25)
         }

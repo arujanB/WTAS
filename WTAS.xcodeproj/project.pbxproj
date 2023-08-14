@@ -7,36 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84AC5D272A8361DF00B524A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC5D262A8361DF00B524A9 /* MainViewController.swift */; };
+		846797B72A860D0500C216F7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846797B62A860D0500C216F7 /* TabBarViewController.swift */; };
+		846797BB2A8626E400C216F7 /* QuickLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846797BA2A8626E400C216F7 /* QuickLoginViewController.swift */; };
 		84AC5D2B2A836E9500B524A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC5D2A2A836E9500B524A9 /* HomeViewController.swift */; };
 		84AC5D2E2A837C3600B524A9 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC5D2D2A837C3600B524A9 /* HomeTableViewCell.swift */; };
 		84B4E5032A82530800FF0E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5022A82530800FF0E72 /* AppDelegate.swift */; };
 		84B4E5052A82530800FF0E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5042A82530800FF0E72 /* SceneDelegate.swift */; };
-		84B4E5072A82530800FF0E72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5062A82530800FF0E72 /* ViewController.swift */; };
+		84B4E5072A82530800FF0E72 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5062A82530800FF0E72 /* RegistrationViewController.swift */; };
 		84B4E50D2A82530800FF0E72 /* WTAS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E50B2A82530800FF0E72 /* WTAS.xcdatamodeld */; };
 		84B4E50F2A82530B00FF0E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B4E50E2A82530B00FF0E72 /* Assets.xcassets */; };
 		84B4E5122A82530B00FF0E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B4E5102A82530B00FF0E72 /* LaunchScreen.storyboard */; };
 		84B827032A84FA330058BD86 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B827022A84FA330058BD86 /* SideViewController.swift */; };
-		84B827062A84FA9B0058BD86 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B827052A84FA9B0058BD86 /* ConnectViewController.swift */; };
+		84BB810F2A8A357A007E824D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB810E2A8A357A007E824D /* NotificationViewController.swift */; };
+		84BB81122A8A3774007E824D /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB81112A8A3774007E824D /* NotificationTableViewCell.swift */; };
 		B6BE55BCFBD8D505A96725AF /* Pods_WTAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832676FAC4F292CFDF80B3BC /* Pods_WTAS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		196120C137159E8C45DF51D9 /* Pods-WTAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTAS.release.xcconfig"; path = "Target Support Files/Pods-WTAS/Pods-WTAS.release.xcconfig"; sourceTree = "<group>"; };
 		832676FAC4F292CFDF80B3BC /* Pods_WTAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84AC5D262A8361DF00B524A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		846797B62A860D0500C216F7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		846797BA2A8626E400C216F7 /* QuickLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLoginViewController.swift; sourceTree = "<group>"; };
 		84AC5D2A2A836E9500B524A9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84AC5D2D2A837C3600B524A9 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		84B4E4FF2A82530800FF0E72 /* WTAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B4E5022A82530800FF0E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B4E5042A82530800FF0E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84B4E5062A82530800FF0E72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84B4E5062A82530800FF0E72 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		84B4E50C2A82530800FF0E72 /* WTAS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WTAS.xcdatamodel; sourceTree = "<group>"; };
 		84B4E50E2A82530B00FF0E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B4E5112A82530B00FF0E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B4E5132A82530B00FF0E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B827022A84FA330058BD86 /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
-		84B827052A84FA9B0058BD86 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		84BB810E2A8A357A007E824D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		84BB81112A8A3774007E824D /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		8DB55E5198D1E8D7AFDEA338 /* Pods-WTAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTAS.debug.xcconfig"; path = "Target Support Files/Pods-WTAS/Pods-WTAS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +56,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846797B82A8623B900C216F7 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				846797B92A86243C00C216F7 /* Controller */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		846797B92A86243C00C216F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B4E5062A82530800FF0E72 /* RegistrationViewController.swift */,
+				846797BA2A8626E400C216F7 /* QuickLoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		84AC5D282A836E6000B524A9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +85,6 @@
 		84AC5D292A836E8100B524A9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				84B827052A84FA9B0058BD86 /* ConnectViewController.swift */,
 				84AC5D2A2A836E9500B524A9 /* HomeViewController.swift */,
 				84B827022A84FA330058BD86 /* SideViewController.swift */,
 			);
@@ -102,15 +122,41 @@
 			children = (
 				84B4E5022A82530800FF0E72 /* AppDelegate.swift */,
 				84B4E5042A82530800FF0E72 /* SceneDelegate.swift */,
-				84B4E5062A82530800FF0E72 /* ViewController.swift */,
 				84B4E50E2A82530B00FF0E72 /* Assets.xcassets */,
-				84AC5D262A8361DF00B524A9 /* MainViewController.swift */,
+				846797B62A860D0500C216F7 /* TabBarViewController.swift */,
+				846797B82A8623B900C216F7 /* Registration */,
 				84AC5D282A836E6000B524A9 /* Home */,
+				84BB810C2A8A352E007E824D /* Notification */,
 				84B4E5102A82530B00FF0E72 /* LaunchScreen.storyboard */,
 				84B4E5132A82530B00FF0E72 /* Info.plist */,
 				84B4E50B2A82530800FF0E72 /* WTAS.xcdatamodeld */,
 			);
 			path = WTAS;
+			sourceTree = "<group>";
+		};
+		84BB810C2A8A352E007E824D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				84BB81102A8A3754007E824D /* View */,
+				84BB810D2A8A354F007E824D /* Controller */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		84BB810D2A8A354F007E824D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84BB810E2A8A357A007E824D /* NotificationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84BB81102A8A3754007E824D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84BB81112A8A3774007E824D /* NotificationTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		98707BB6CCC264D971DBF35C /* Frameworks */ = {
@@ -244,15 +290,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BB810F2A8A357A007E824D /* NotificationViewController.swift in Sources */,
 				84B4E50D2A82530800FF0E72 /* WTAS.xcdatamodeld in Sources */,
-				84B4E5072A82530800FF0E72 /* ViewController.swift in Sources */,
+				84B4E5072A82530800FF0E72 /* RegistrationViewController.swift in Sources */,
 				84AC5D2E2A837C3600B524A9 /* HomeTableViewCell.swift in Sources */,
 				84B4E5032A82530800FF0E72 /* AppDelegate.swift in Sources */,
+				846797B72A860D0500C216F7 /* TabBarViewController.swift in Sources */,
 				84B4E5052A82530800FF0E72 /* SceneDelegate.swift in Sources */,
-				84AC5D272A8361DF00B524A9 /* MainViewController.swift in Sources */,
-				84B827062A84FA9B0058BD86 /* ConnectViewController.swift in Sources */,
 				84AC5D2B2A836E9500B524A9 /* HomeViewController.swift in Sources */,
+				846797BB2A8626E400C216F7 /* QuickLoginViewController.swift in Sources */,
 				84B827032A84FA330058BD86 /* SideViewController.swift in Sources */,
+				84BB81122A8A3774007E824D /* NotificationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

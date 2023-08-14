@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class RegistrationViewController: UIViewController {
     
     private lazy var imgLogo: UIImageView = {
         let img = UIImageView()
@@ -112,8 +112,10 @@ class ViewController: UIViewController {
     
     @objc func logInMove(){
         if(usernameTextField.text == "Aruzhan" && passwordTextField.text == "123") {
-            let mainVC = HomeViewController()
-//            let mainVC = ConnectViewController()
+            let mainVC = TabBarViewController()
+            navigationController?.pushViewController(mainVC, animated: true)
+        }else if(usernameTextField.text == "" && passwordTextField.text == "") {
+            let mainVC = QuickLoginViewController()
             navigationController?.pushViewController(mainVC, animated: true)
         }else {
             view.addSubview(wrongLogIn)
@@ -162,7 +164,7 @@ class ViewController: UIViewController {
 }
 
 //MARK: - setUpViews and setUpConstraints
-extension ViewController{
+extension RegistrationViewController{
     func setUpViews(){
 //        view.addSubview(imgLogo)
         view.addSubview(titleName)
