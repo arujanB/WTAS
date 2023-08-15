@@ -69,6 +69,11 @@ class HomeViewController: UIViewController {
         //to remove the back icon on the left side of the screen
 //        navigationItem.setHidesBackButton(false, animated: false)
         
+        // Hide the back button in the navigation bar
+//        navigationItem.hidesBackButton = true
+//        navigationController?.navigationBar.topItem?.hidesBackButton = true
+        navigationItem.setHidesBackButton(true, animated: false)
+        
         view.addSubview(backgroundImage)
         backgroundImage.snp.makeConstraints { make in
             make.leading.trailing.top.bottom.equalToSuperview()

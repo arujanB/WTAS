@@ -110,7 +110,9 @@ class QuickLoginViewController: UIViewController {
         if let buttonSave = pinCodeTextField.text, buttonSave == "1234" {
             print("Correct: \(pinCodeTextField.text)")
             let vc = TabBarViewController()
-            navigationController?.pushViewController(vc, animated: true)
+//            navigationController?.pushViewController(vc, animated: true)
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
         }else {
             view.addSubview(wrongTitlePinCode)
             wrongTitlePinCode.snp.makeConstraints { make in

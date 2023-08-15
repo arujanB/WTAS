@@ -17,6 +17,7 @@ class TabBarViewController: UITabBarController {
         
         tabBar.barTintColor = UIColor.black
         tabBar.tintColor = .black
+        tabBar.backgroundColor = .white
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: HomeViewController())

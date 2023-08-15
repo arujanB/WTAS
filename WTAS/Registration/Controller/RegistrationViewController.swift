@@ -16,13 +16,21 @@ class RegistrationViewController: UIViewController {
         return img
     }()
     
-     private lazy var titleName: UILabel = {
-         let label = UILabel()
-         label.text = "СУРВ"
-         label.textColor = .systemOrange
-         label.font = UIFont.boldSystemFont(ofSize: 70)
-         return label
-    }()
+//     private lazy var titleName: UILabel = {
+//         let label = UILabel()
+//         label.text = "СУРВ"
+//         label.textColor = .systemOrange
+//         label.font = UIFont.boldSystemFont(ofSize: 70)
+//         return label
+//    }()
+    
+    private lazy var titleName: UIImageView = {
+        let label = UIImageView(image: UIImage(named: "name"))
+//        label.text = "СУРВ"
+//        label.textColor = .systemOrange
+//        label.font = UIFont.boldSystemFont(ofSize: 70)
+        return label
+   }()
     
     private lazy var subtitle: UILabel = {
         let label = UILabel()
@@ -49,7 +57,6 @@ class RegistrationViewController: UIViewController {
     }()
     
     //MARK: - TextField
-    
     private lazy var usernameBackView: UIView = backViewTextField()
     private lazy var passwordBackView: UIView = backViewTextField()
     
@@ -113,7 +120,9 @@ class RegistrationViewController: UIViewController {
     @objc func logInMove(){
         if(usernameTextField.text == "Aruzhan" && passwordTextField.text == "123") {
             let mainVC = TabBarViewController()
-            navigationController?.pushViewController(mainVC, animated: true)
+//            navigationController?.pushViewController(mainVC, animated: true)
+            mainVC.modalPresentationStyle = .fullScreen
+            present(mainVC, animated: true)
         }else if(usernameTextField.text == "" && passwordTextField.text == "") {
             let mainVC = QuickLoginViewController()
             navigationController?.pushViewController(mainVC, animated: true)

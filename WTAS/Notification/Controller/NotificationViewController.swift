@@ -12,8 +12,36 @@ class NotificationViewController: UIViewController {
     private lazy var backgraoundView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
-        view.layer.cornerRadius = 10
+        view.layer.cornerRadius = 30
         return view
+    }()
+    
+    private lazy var notificationLogo: UIImageView = {
+        let logo = UIImageView(image: UIImage(named: "user"))
+        logo.contentMode = .topLeft // Set the content mode
+        return logo
+    }()
+    
+    private lazy var titleName: UILabel = {
+        let title = UILabel()
+        title.text = "Уведомления"
+        return title
+    }()
+    
+//    private lazy var stackView: UIStackView = {
+//        let stackView = UIStackView()
+//        stackView.addArrangedSubview(notificationLogo)
+//        stackView.addArrangedSubview(titleName)
+//
+//        stackView.distribution = .
+//        stackView.axis = .horizontal
+//        return stackView
+//    }()
+
+    private lazy var line: UIView = {
+        let line = UIView()
+        line.backgroundColor = .gray
+        return line
     }()
     
     private lazy var myTableView: UITableView = {
@@ -56,6 +84,7 @@ extension NotificationViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
+        cell.backgroundColor = .init(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)
         return cell
     }
     
@@ -83,6 +112,9 @@ extension NotificationViewController: UITableViewDelegate {
 extension NotificationViewController {
     func setUpViews(){
         view.addSubview(backgraoundView)
+        backgraoundView.addSubview(notificationLogo)
+        backgraoundView.addSubview(titleName)
+        backgraoundView.addSubview(line)
         backgraoundView.addSubview(myTableView)
     }
     
@@ -90,10 +122,35 @@ extension NotificationViewController {
         backgraoundView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(20)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().inset(20)
+            make.bottom.equalToSuperview()
+        }
+        
+        notificationLogo.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(20)
+            make.leading.equalToSuperview().offset(20)
+            make.height.equalTo(100)
+            make.width.equalTo(100)
+        }
+        
+        titleName.snp.makeConstraints { make in
+            make.leading.equalTo(notificationLogo.snp.trailing)
+            make.top.equalToSuperview().offset(20)
+        }
+        
+        line.snp.makeConstraints { make in
+            make.height.equalTo(1)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().inset(20)
+            make.top.equalTo(titleName.snp.bottom).offset(20)
         }
         
         myTableView.snp.makeConstraints { make in
             make.center.equalToSuperview()
+            make.top.equalTo(line.snp.bottom).offset(10)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().inset(20)
         }
     }
 }
