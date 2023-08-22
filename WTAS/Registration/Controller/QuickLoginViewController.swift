@@ -9,6 +9,8 @@ import UIKit
 
 class QuickLoginViewController: UIViewController {
     
+    var pinCode: String = "1234"
+    
     private lazy var titleName: UILabel = {
         let name = UILabel()
         name.text = "ВОЙТИ"
@@ -17,16 +19,18 @@ class QuickLoginViewController: UIViewController {
         return name
     }()
     
-    private lazy var pinCodeTextField: UITextField = {
-        let textfield = UITextField()
-        textfield.textContentType = .password
-        textfield.isSecureTextEntry = true
-        textfield.placeholder = ""
-        print(textfield.text)
-        textfield.font = UIFont.systemFont(ofSize: 50)
-        textfield.textAlignment = .center
-        return textfield
-    }()
+//    private lazy var pinCodeTextField: UITextField = {
+//        let textfield = UITextField()
+//        textfield.textContentType = .password
+//        textfield.isSecureTextEntry = true
+//        textfield.placeholder = ""
+//        print(textfield.text)
+//        textfield.font = UIFont.systemFont(ofSize: 50)
+//        textfield.textAlignment = .center
+//        return textfield
+//    }()
+    
+    private var verifyView = VerifyView()
     
     private let backView: UIView = {
         let view = UIView()
@@ -67,7 +71,7 @@ class QuickLoginViewController: UIViewController {
         button.setTitle("go", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 30)
-        button.addTarget(self, action: #selector(buttonSave(_:)), for: .touchUpInside)
+//        button.addTarget(self, action: #selector(buttonSave(_:)), for: .touchUpInside)
                     
         return button
     }()
@@ -77,7 +81,7 @@ class QuickLoginViewController: UIViewController {
         button.setTitle("go", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 30)
-        button.addTarget(self, action: #selector(buttonRemove(_:)), for: .touchUpInside)
+//        button.addTarget(self, action: #selector(buttonRemove(_:)), for: .touchUpInside)
                     
         return button
     }()
@@ -100,32 +104,54 @@ class QuickLoginViewController: UIViewController {
     }()
     
     @objc private func buttonTapped(_ sender: UIButton) {
-        if let buttonText = sender.titleLabel?.text {
-            pinCodeTextField.text?.append(contentsOf: buttonText)
-            print("PIN Code: \(pinCodeTextField.text)")
-        }
-    }
+//        if let buttonText = sender.titleLabel?.text {
+////            pinCodeTextField.text?.append(contentsOf: buttonText)
+//            for num in 0...3{
+//                verifyView.textFieldArray[num].text?.append(contentsOf: buttonText)
+//                print("PIN Code: \(verifyView.textFieldArray[num].text)")
+//            }
+////            print("PIN Code: \(pinCodeTextField.text)")
+//        }
+        
+        let buttonText = sender.titleLabel?.text
+        let tag = sender.tag
+        var counttextFieldArray = 0
+        print("TAG: \(tag)")
     
-    @objc private func buttonSave(_ sender: UIButton) {
-        if let buttonSave = pinCodeTextField.text, buttonSave == "1234" {
-            print("Correct: \(pinCodeTextField.text)")
-            let vc = TabBarViewController()
-//            navigationController?.pushViewController(vc, animated: true)
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
-        }else {
-            view.addSubview(wrongTitlePinCode)
-            wrongTitlePinCode.snp.makeConstraints { make in
-                make.top.equalTo(pinCodeTextField.snp.bottom).offset(50)
-                make.centerX.equalToSuperview()
+            
+        if tag >= 0 && counttextFieldArray < verifyView.textFieldArray.count {
+            let currentTextField = verifyView.textFieldArray[counttextFieldArray]
+            currentTextField.text?.append(contentsOf: buttonText ?? "")
+            print("CURRENT TEXTFIELD: \(currentTextField.text)")
+            // Move focus to the next text field
+            if tag < verifyView.textFieldArray.count - 1 {
+                verifyView.textFieldArray[tag + 1].becomeFirstResponder()
+                print("texfield array \(verifyView.textFieldArray)")
             }
+            counttextFieldArray += 1
         }
     }
-    
-    @objc private func buttonRemove(_ sender: UIButton) {
-        pinCodeTextField.text?.dropLast()
-        print("Removed. We have: \(pinCodeTextField.text)")
-    }
+//
+//    @objc private func buttonSave(_ sender: UIButton) {
+//        if let buttonSave = pinCodeTextField.text, buttonSave == "1234" {
+//            print("Correct: \(pinCodeTextField.text)")
+//            let vc = TabBarViewController()
+////            navigationController?.pushViewController(vc, animated: true)
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true)
+//        }else {
+//            view.addSubview(wrongTitlePinCode)
+//            wrongTitlePinCode.snp.makeConstraints { make in
+//                make.top.equalTo(pinCodeTextField.snp.bottom).offset(50)
+//                make.centerX.equalToSuperview()
+//            }
+//        }
+//    }
+//
+//    @objc private func buttonRemove(_ sender: UIButton) {
+//        pinCodeTextField.text?.dropLast()
+//        print("Removed. We have: \(pinCodeTextField.text)")
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,6 +163,8 @@ class QuickLoginViewController: UIViewController {
         backgroundImage.snp.makeConstraints { make in
             make.leading.trailing.top.bottom.equalToSuperview()
         }
+        
+        verifyView.pinCodeDelegate = self
         
         showAlert()
         
@@ -174,26 +202,46 @@ class QuickLoginViewController: UIViewController {
 
 }
 
-//MARK: - UiTableViewDelegate
-extension QuickLoginViewController: UITableViewDelegate{
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentText = (textField.text ?? "") as NSString
-        let newText = currentText.replacingCharacters(in: range, with: string)
-
-        if newText.count <= 4 {
-            return true
-        } else {
-            return false
+//MARK: - check Pin Code
+extension QuickLoginViewController: CheckCodeProtocol {
+    func check() {
+        let pinCodeVar = verifyView.getFieldsPinCode()
+        if pinCodeVar == pinCode {
+            let vc = TabBarViewController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }else {
+            for i in 0...3{
+                verifyView.textFieldArray[i].backgroundColor = .systemGray5
+                verifyView.textFieldArray[0].becomeFirstResponder()
+                
+                print("ERROR")
+            }
         }
     }
 }
+
+////MARK: - UiTableViewDelegate
+//extension QuickLoginViewController: UITableViewDelegate{
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        let currentText = (textField.text ?? "") as NSString
+//        let newText = currentText.replacingCharacters(in: range, with: string)
+//
+//        if newText.count <= 4 {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
+//}
 
 //MARK: - setUpViews() and setUpConstraints()
 extension QuickLoginViewController{
     func setUpViews(){
         view.addSubview(titleName)
         view.addSubview(backView)
-        backView.addSubview(pinCodeTextField)
+//        backView.addSubview(pinCodeTextField)
+        backView.addSubview(verifyView)
         backView.addSubview(titlePinCode)
         backView.addSubview(collectStackView)
     }
@@ -215,16 +263,27 @@ extension QuickLoginViewController{
             make.centerX.equalToSuperview()
         }
         
-        pinCodeTextField.snp.makeConstraints { make in
+//        pinCodeTextField.snp.makeConstraints { make in
+//            make.top.equalTo(titlePinCode.snp.bottom).offset(30)
+//            make.centerX.equalToSuperview()
+//            make.leading.trailing.equalToSuperview()
+//        }
+        
+        verifyView.snp.makeConstraints { make in
             make.top.equalTo(titlePinCode.snp.bottom).offset(30)
+//            make.top.equalTo(pinCodeTextField.snp.bottom).offset(30)
             make.centerX.equalToSuperview()
-            make.leading.trailing.equalToSuperview()
+//            make.leading.trailing.equalToSuperview()
+//            make.leading.equalToSuperview().offset(100)
+//            make.trailing.equalToSuperview().inset(100)
+            make.width.equalTo(100)
         }
         
         collectStackView.snp.makeConstraints { make in
-            make.top.equalTo(pinCodeTextField.snp.bottom).offset(100)
+            make.top.equalTo(verifyView.snp.bottom).offset(100)
             make.leading.trailing.equalToSuperview()
-            make.bottom.equalToSuperview().inset(100)
+//            make.bottom.equalToSuperview().inset(100)
+            make.bottom.equalToSuperview().inset(50)
         }
     }
     

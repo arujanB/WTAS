@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		846797B72A860D0500C216F7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846797B62A860D0500C216F7 /* TabBarViewController.swift */; };
 		846797BB2A8626E400C216F7 /* QuickLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846797BA2A8626E400C216F7 /* QuickLoginViewController.swift */; };
+		84A07E0B2A8DDAED00853E92 /* VerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A07E0A2A8DDAED00853E92 /* VerifyView.swift */; };
+		84ABEF1B2A8CDBAF00C99E85 /* VerifyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABEF1A2A8CDBAF00C99E85 /* VerifyTextField.swift */; };
 		84AC5D2B2A836E9500B524A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC5D2A2A836E9500B524A9 /* HomeViewController.swift */; };
 		84AC5D2E2A837C3600B524A9 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC5D2D2A837C3600B524A9 /* HomeTableViewCell.swift */; };
+		84B055E62A8F80DD006FC54D /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B055E52A8F80DD006FC54D /* QRViewController.swift */; };
 		84B4E5032A82530800FF0E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5022A82530800FF0E72 /* AppDelegate.swift */; };
 		84B4E5052A82530800FF0E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5042A82530800FF0E72 /* SceneDelegate.swift */; };
 		84B4E5072A82530800FF0E72 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4E5062A82530800FF0E72 /* RegistrationViewController.swift */; };
@@ -28,8 +31,11 @@
 		832676FAC4F292CFDF80B3BC /* Pods_WTAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846797B62A860D0500C216F7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		846797BA2A8626E400C216F7 /* QuickLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLoginViewController.swift; sourceTree = "<group>"; };
+		84A07E0A2A8DDAED00853E92 /* VerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyView.swift; sourceTree = "<group>"; };
+		84ABEF1A2A8CDBAF00C99E85 /* VerifyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTextField.swift; sourceTree = "<group>"; };
 		84AC5D2A2A836E9500B524A9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84AC5D2D2A837C3600B524A9 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		84B055E52A8F80DD006FC54D /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		84B4E4FF2A82530800FF0E72 /* WTAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B4E5022A82530800FF0E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B4E5042A82530800FF0E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 		846797B82A8623B900C216F7 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				84ABEF192A8CD69B00C99E85 /* View */,
 				846797B92A86243C00C216F7 /* Controller */,
 			);
 			path = Registration;
@@ -71,6 +78,15 @@
 				846797BA2A8626E400C216F7 /* QuickLoginViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		84ABEF192A8CD69B00C99E85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84ABEF1A2A8CDBAF00C99E85 /* VerifyTextField.swift */,
+				84A07E0A2A8DDAED00853E92 /* VerifyView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		84AC5D282A836E6000B524A9 /* Home */ = {
@@ -97,6 +113,22 @@
 				84AC5D2D2A837C3600B524A9 /* HomeTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84B055E42A8F80BA006FC54D /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				84B055E72A8F80E2006FC54D /* Controller */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		84B055E72A8F80E2006FC54D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B055E52A8F80DD006FC54D /* QRViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		84B4E4F62A82530800FF0E72 = {
@@ -126,6 +158,7 @@
 				846797B62A860D0500C216F7 /* TabBarViewController.swift */,
 				846797B82A8623B900C216F7 /* Registration */,
 				84AC5D282A836E6000B524A9 /* Home */,
+				84B055E42A8F80BA006FC54D /* QR */,
 				84BB810C2A8A352E007E824D /* Notification */,
 				84B4E5102A82530B00FF0E72 /* LaunchScreen.storyboard */,
 				84B4E5132A82530B00FF0E72 /* Info.plist */,
@@ -290,12 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A07E0B2A8DDAED00853E92 /* VerifyView.swift in Sources */,
 				84BB810F2A8A357A007E824D /* NotificationViewController.swift in Sources */,
 				84B4E50D2A82530800FF0E72 /* WTAS.xcdatamodeld in Sources */,
+				84B055E62A8F80DD006FC54D /* QRViewController.swift in Sources */,
 				84B4E5072A82530800FF0E72 /* RegistrationViewController.swift in Sources */,
 				84AC5D2E2A837C3600B524A9 /* HomeTableViewCell.swift in Sources */,
 				84B4E5032A82530800FF0E72 /* AppDelegate.swift in Sources */,
 				846797B72A860D0500C216F7 /* TabBarViewController.swift in Sources */,
+				84ABEF1B2A8CDBAF00C99E85 /* VerifyTextField.swift in Sources */,
 				84B4E5052A82530800FF0E72 /* SceneDelegate.swift in Sources */,
 				84AC5D2B2A836E9500B524A9 /* HomeViewController.swift in Sources */,
 				846797BB2A8626E400C216F7 /* QuickLoginViewController.swift in Sources */,

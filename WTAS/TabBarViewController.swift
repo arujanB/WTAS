@@ -20,7 +20,7 @@ class TabBarViewController: UITabBarController {
         tabBar.backgroundColor = .white
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
-        let vc2 = UINavigationController(rootViewController: HomeViewController())
+        let vc2 = UINavigationController(rootViewController: QRViewController())
         let vc3 = UINavigationController(rootViewController: NotificationViewController())
         
         vc1.tabBarItem.image = UIImage(systemName: "circle.circle")
